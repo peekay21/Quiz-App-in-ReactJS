@@ -1,0 +1,58 @@
+.App{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  color:white;
+  width: 500px;
+  height: 500px;
+  flex-direction: column;
+  background-color: lightseagreen;
+  justify-content: center;
+  align-items: center;
+}
+
+.Menu button,
+.Quiz .option,
+.EndScreen button{
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      border: None;
+      width: 100%;
+      margin: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+
+}
+
+.Quiz .option:hover{
+  background-color: rgb(6, 96, 6);
+}
+.Quiz .option.option:click{
+  background-color: rgb(48, 1, 178);
+}
+
+
+.next
+{
+  padding: 10px 20px;
+      background-color: #0833f2;
+      color: #fff;
+      border: None;
+      width: 100%;
+      margin: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+
+
+}
