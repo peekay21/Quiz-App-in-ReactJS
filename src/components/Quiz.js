@@ -6,7 +6,7 @@ import { QuizContext } from '../Helpers/QuizContext';
 
 function Quiz() {
 
-  const { setGameState, score, setScore} = useContext(QuizContext);
+  const { setGameState, score, setScore, username} = useContext(QuizContext);
   const [currQuestion, setCurrQuestion] = useState(0);
   const [chosenOption, setChosenOption] = useState("");
   const endquiz = () =>{
@@ -26,7 +26,10 @@ function Quiz() {
  
 
   return (
-    <div className='Quiz'> <h1>Question {currQuestion +1 }</h1>
+
+    <div className='Quiz'> 
+    <h1>Hello {username}</h1>
+    <h1>Question {currQuestion +1 }  </h1>
     <h2>{Questions[currQuestion].prompt }</h2>
     <button className="option" onClick={()=>{setChosenOption('A');}} >{Questions[currQuestion].optionA }</button>
     <button className="option" onClick={()=>{setChosenOption('B');}} >{Questions[currQuestion].optionB }</button>
